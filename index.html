@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>MSN — Portfolio</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+  <!-- Header -->
+  <header class="max-w-[1120px] mx-auto px-4 py-3 flex items-center justify-between bg-white border-b-4 border-black shadow-[6px_6px_0_0_rgba(0,0,0,1)] rounded-md static z-40">
+    <h1 class="text-lg md:text-2xl font-bold">Mayank Singh Negi</h1>
+    <nav class="hidden md:flex gap-6 items-center text-base">
+      <a href="#about" class="hover:underline">About</a>
+      <a href="#projects" class="hover:underline">Projects</a>
+      <a href="#contact" class="hover:underline">Contact</a>
+      <a href="resume.pdf" target="_blank">Resume</a>
+    </nav>
+    <button id="menuBtn" class="md:hidden menu-btn p-2 rounded bg-white border-2 border-black">
+      <svg width="22" height="14" viewBox="0 0 22 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <rect width="22" height="2" y="0" rx="1" fill="#000"/>
+        <rect width="22" height="2" y="6" rx="1" fill="#000"/>
+        <rect width="22" height="2" y="12" rx="1" fill="#000"/>
+      </svg>
+    </button>
+  </header>
+
+  <!-- Mobile Nav -->
+  <div id="mobileNav" class="fixed inset-x-4 top-20 bg-white border-4 border-black rounded-xl shadow-[8px_8px_0_0_rgba(0,0,0,1)] p-4 z-30 hidden">
+    <a href="#about" class="block py-2 text-lg">About</a>
+    <a href="#projects" class="block py-2 text-lg">Projects</a>
+    <a href="#contact" class="block py-2 text-lg">Contact</a>
+    <a href="resume.pdf" target="_blank">Resume</a>
+  </div>
+
+  <!-- Hero -->
+  <main class="hero-grid">
+    <div style="display:flex; justify-content:center; align-items:center;">
+      <div class="neobrutal-frame polaroid">
+        <div class="photo-stack" id="photoStack" tabindex="0">
+          <img src="/photos/1.jpeg" alt="Mayank's photo1" class="stack-img active" />
+          <img src="/photos/2.jpg" alt="Mayank's photo2" class="stack-img behind" />
+          <img src="/photos/3.jpeg" alt="Mayank's photo3" class="stack-img behind" />
+          <img src="/photos/4.jpg" alt="Mayank's photo4" class="stack-img behind" />
+          <img src="/photos/5.jpg" alt="Mayank's photo5" class="stack-img behind" />
+          <img src="/photos/6.jpg" alt="Mayank's photo6" class="stack-img behind" />
+        </div>
+      </div>
+    </div>
+    <div class="hero-text">
+      <h2 class="hero-heading"><strong>Hello, I'm</strong> <span style="color:var(--neo-accent)">Mayank</span></h2>
+      <p class="hero-sub">
+        A CSE Innovator Crafting Smart AI & Web Solutions<br>
+        Engineering AI-Driven Web Experiences for Real-World Impact
+      </p>
+      <div style="display:flex; gap:1rem; flex-wrap:wrap;">
+        <a href="#projects" class="inline-block bg-yellow-300 border-4 border-black rounded-xl px-6 py-3 font-bold shadow-[4px_4px_0_0_rgba(0,0,0,1)]">View My Work</a>
+        <a href="#contact" class="inline-flex items-center justify-center px-5 py-3 border-4 border-black rounded-xl font-bold">Contact</a>
+      </div>
+    </div>
+  </main>
+
+  <!-- About -->
+  <section id="about" class="max-w-4xl mx-auto p-8 mb-16 bg-white border-4 border-black rounded-xl shadow-[6px_6px_0_0_rgba(0,0,0,1)]">
+    <h3 class="text-2xl font-bold mb-4">About Me</h3>
+    <p>
+      I am a B.Tech CSE student passionate about AI, Data, and Web Development. 
+      With hackathon wins and a published research paper, I love building impactful projects that solve real-world problems.
+    </p>
+  </section>
+
+  <!-- Projects -->
+  <section id="projects" class="max-w-5xl mx-auto px-6 mb-16">
+    <h3 class="text-2xl font-bold mb-6 text-center">Projects</h3>
+    <div class="grid md:grid-cols-2 gap-8">
+      <div class="bg-white border-4 border-black rounded-xl shadow-[6px_6px_0_0_rgba(0,0,0,1)] p-6">
+        <h4 class="text-xl font-bold mb-2">MentalGlow-AI</h4>
+        <p class="mb-4">
+          AI-powered mental wellness platform integrating chat support, sentiment tracking, and analytics for students and corporates.<br>
+          <a href="#projects" class="underline text-purple-500">Link Coming Soon</a>
+        </p>
+      </div>
+      <div class="bg-white border-4 border-black rounded-xl shadow-[6px_6px_0_0_rgba(0,0,0,1)] p-6">
+        <h4 class="text-xl font-bold mb-2">Flight Fare Prediction</h4>
+        <p class="mb-4">
+          Machine learning model that predicts airline ticket prices based on routes, time, and demand.<br>
+          <a href="#projects" class="underline text-pink-500">Coming Soon</a>
+        </p>
+      </div>
+      <div class="bg-white border-4 border-black rounded-xl shadow-[6px_6px_0_0_rgba(0,0,0,1)] p-6">
+        <h4 class="text-xl font-bold mb-2">Handwritten Digit Recognition</h4>
+        <p class="mb-4">
+          Deep learning model for classifying handwritten digits using MNIST dataset.<br>
+          <a href="#projects" class="underline text-red-500">Coming Soon</a>
+        </p>
+      </div>
+      <div class="bg-white border-4 border-black rounded-xl shadow-[6px_6px_0_0_rgba(0,0,0,1)] p-6">
+        <h4 class="text-xl font-bold mb-2">Air Quality Prediction</h4>
+        <p class="mb-4">
+          Data analytics project predicting AQI trends with machine learning.<br>
+          <a href="#projects" class="underline text-green-500">Coming Soon</a>
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact -->
+  <section id="contact" class="max-w-4xl mx-auto p-8 mb-16 bg-white border-4 border-black rounded-xl shadow-[6px_6px_0_0_rgba(0,0,0,1)] text-center">
+    <h3 class="text-2xl font-bold mb-4">Contact Me</h3>
+    <p class="mb-4">Let's collaborate! Reach out via email or social media.</p>
+    <div class="space-x-4">
+      <a href="mailto:work.mayanknegi@gmail.com" class="underline text-purple-500">Email</a>
+      <a href="https://www.linkedin.com/in/mayank-singh-negi-2a7526283" target="_blank" class="underline text-blue-500">LinkedIn</a>
+      <a href="https://github.com/MayankSNegi" target="_blank" class="underline text-green-500">GitHub</a>
+      <a href="https://x.com/MayankSNegi" target="_blank" class="underline text-pink-500">X</a>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="site-footer">
+    <small>&copy; 2025 Mayank Singh Negi</small>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
