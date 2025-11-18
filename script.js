@@ -25,17 +25,17 @@ mobileNav.querySelectorAll('a').forEach(a =>
     //  COLOR PALETTES 
     // Defined a color palette for each image. The order must match the image order in the html
     const imageColorPalettes = [
-        // Palette for photo1.png (Monochromatic Green)
+        // Palette for photo1 (Monochromatic Green)
         ['#7fe8a8', '#9ff2c6', '#ccfeec', '#e6fff6', '#dfffe8', '#86ffc1'],
-        // Palette for photo5.png (Purple & Cyan)
+        // Palette for photo2 (Purple & Cyan)
         ['#1e0033', '#310054', '#5e00a3', '#0d6f8a', '#17a9d1', '#59d2f0'],
-        // Palette for photo8.png (light modern blue)
+        // Palette for photo3 (light modern blue)
         ['#eef6ff', '#dbeafe', '#bfdbfe', '#93c5fd', '#60a5fa', '#3b82f6'],
-        // Palette for photo9.png (warm pastel/peach)
+        // Palette for photo4 (warm pastel/peach)
         ['#fff7ed', '#ffedd5', '#fed7aa', '#fdba74', '#fb923c', '#f97316'],
-        // Palette for photo10.png (Muted Purple & Teal)
+        // Palette for photo5 (Muted Purple & Teal)
         ['#1e1c24', '#3c3847', '#575269', '#4d757d', '#6daeb8', '#98d2dc'],
-        // Palette for photo12.png (Violet & Cream)
+        // Palette for photo6 (Violet & Cream)
         ['#110033', '#250075', '#3900b3', '#7e6a9e', '#b5a7c9', '#ede6f5']
     ];//END OF COLOR PALETTES
 
